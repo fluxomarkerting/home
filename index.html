@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0B3B8C">
+
+<!-- ============ SEO PRINCIPAL ============ -->
+<title>{SERVICO_PRINCIPAL} em {CIDADE} - {ESTADO} | {EMPRESA}</title>
+<meta name="description" content="{EMPRESA} desenvolve {SERVICO_PRINCIPAL} para {NICHO} em {CIDADE} e região. Sites rápidos, SEO local, Google Ads e geração de leads. Fale no WhatsApp {WHATSAPP}.">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+<meta name="author" content="{EMPRESA}">
+<link rel="canonical" href="https://{DOMINIO}/">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="{EMPRESA}">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:title" content="{SERVICO_PRINCIPAL} em {CIDADE} - {ESTADO} | {EMPRESA}">
+<meta property="og:description" content="Sites institucionais premium, rápidos e otimizados para SEO local em {CIDADE} e {AREA_ATENDIMENTO}.">
+<meta property="og:url" content="https://{DOMINIO}/">
+<meta property="og:image" content="https://{DOMINIO}/{IMAGEM_HERO}">
+
+<!-- Twitter Cards -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{SERVICO_PRINCIPAL} em {CIDADE} | {EMPRESA}">
+<meta name="twitter:description" content="Sites que geram clientes para {NICHO} em {CIDADE} e região.">
+<meta name="twitter:image" content="https://{DOMINIO}/{IMAGEM_HERO}">
+
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="image" href="/{IMAGEM_HERO}" fetchpriority="high">
+
+<!-- CSS -->
+<link rel="stylesheet" href="style.css">
+
+<!-- Google Fonts -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"></noscript>
+
+<!-- ============ GOOGLE TAG MANAGER (inserir ID) ============ -->
+<!--
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});
+var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;
+j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-XXXXXXX');</script>
+-->
+<script>window.dataLayer = window.dataLayer || [];</script>
+</head>
+<body>
+<!-- GTM noscript -->
+<!-- <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript> -->
+
+<a class="pular-para-conteudo" href="#conteudo">Pular para o conteúdo principal</a>
+
+<!-- ==========================================================
+     HEADER
+     ========================================================== -->
+<header class="cabecalho" id="cabecalho">
+  <div class="container cabecalho__inner">
+    <a class="logo" href="/" aria-label="{EMPRESA} - Página inicial" data-evento="clique_logo">
+      <img src="/{LOGO}" alt="Logotipo da {EMPRESA}" width="36" height="36" loading="eager" decoding="async">
+      <span>{EMPRESA}</span>
+    </a>
+
+    <nav class="nav" id="nav-principal" aria-label="Navegação principal">
+      <ul class="nav__lista">
+        <li><a class="nav__link" href="/" aria-current="page">Home</a></li>
+        <li><a class="nav__link" href="/servicos/">Serviços</a></li>
+        <li><a class="nav__link" href="/segmentos/">Segmentos</a></li>
+        <li><a class="nav__link" href="/cidades/">Cidades</a></li>
+        <li><a class="nav__link" href="/blog/">Blog</a></li>
+        <li><a class="nav__link" href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+
+    <div class="cabecalho__acoes">
+      <a class="telefone-link" href="tel:{TELEFONE}" data-evento="clique_telefone" data-local="header">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c.9.3 1.9.6 2.9.7a2 2 0 0 1 1.7 2z"/></svg>
+        <span>{TELEFONE}</span>
+      </a>
+      <a class="btn btn--cta" href="https://wa.me/{WHATSAPP}" target="_blank" rel="noopener noreferrer"
+         data-evento="clique_whatsapp" data-local="header">
+        <svg width="19" height="19" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2zm5.8 14.2c-.2.7-1.4 1.3-2 1.4-.5.1-1.2.1-1.9-.1a13 13 0 0 1-6.3-5.5c-.5-.8-.8-1.7-.8-2.5 0-1 .5-1.5.8-1.8.2-.2.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 1.9c.1.2 0 .4-.1.5l-.4.5c-.1.2-.3.3-.1.6a9 9 0 0 0 3.9 3.3c.3.1.4.1.6-.1l.8-1c.2-.2.3-.2.6-.1l1.8.9c.3.1.5.2.5.4.1.2.1.6 0 1z"/></svg>
+        WhatsApp
+      </a>
+      <button class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="nav-principal" aria-label="Abrir menu de navegação">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="conteudo">
+
+<!-- ==========================================================
+     HERO
+     ========================================================== -->
+<section class="hero" aria-labelledby="titulo-principal">
+  <div class="container hero__grid">
+    <div>
+      <span class="hero__badge">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 2 15 9l7 .6-5.3 4.6 1.6 6.8L12 17.3 5.7 21l1.6-6.8L2 9.6 9 9z"/></svg>
+        Referência em {SERVICO_PRINCIPAL} desde {ANO_FUNDACAO}
+      </span>
+      <h1 id="titulo-principal">{SERVICO_PRINCIPAL} em {CIDADE} que transforma visitas em clientes</h1>
+      <p class="hero__sub">
+        A {EMPRESA} cria sites institucionais premium para {NICHO} em {CIDADE} e {AREA_ATENDIMENTO}:
+        design moderno, carregamento rápido, SEO local bem executado e caminhos claros de contato.
+        Um site que trabalha todos os dias para o seu negócio, não apenas um cartão de visitas online.
+      </p>
+      <div class="hero__acoes">
+        <a class="btn btn--cta" href="https://wa.me/{WHATSAPP}" target="_blank" rel="noopener noreferrer"
+           data-evento="clique_whatsapp" data-local="hero">Falar no WhatsApp agora</a>
+        <a class="btn btn--fantasma" href="#servicos" data-evento="clique_cta" data-local="hero_secundario">Ver nossos serviços</a>
+      </div>
+      <ul class="hero__selos">
+        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> Entrega em até 15 dias</li>
+        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> SEO local incluso</li>
+        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> Suporte humano de verdade</li>
+      </ul>
+    </div>
+    <div class="hero__midia">
+      <img src="/{IMAGEM_HERO}" alt="Equipe da {EMPRESA} desenvolvendo um site institucional para uma empresa de {CIDADE}"
+           width="720" height="540" fetchpriority="high" decoding="async">
+    </div>
+  </div>
+</section>
+
+<!-- Breadcrumb -->
+<div class="container">
+  <nav class="breadcrumb" aria-label="Trilha de navegação">
+    <ol>
+      <li><a href="/">Home</a></li>
+      <li aria-current="page">{SERVICO_PRINCIPAL} em {CIDADE}</li>
+    </ol>
+  </nav>
+</div>
+
+<!-- ==========================================================
+     EMPRESAS ATENDIDAS
+     ========================================================== -->
+<section class="secao secao--clara" aria-labelledby="clientes-titulo" style="padding-block:var(--sp-4)">
+  <div class="container">
+    <p id="clientes-titulo" style="text-align:center;font-size:.88rem;text-transform:uppercase;letter-spacing:.1em;font-weight:700;margin-bottom:var(--sp-3)">
+      Negócios de {CIDADE} e região que confiam na {EMPRESA}
+    </p>
+    <div class="clientes">
+      <span>Advocacia</span><span>Odontologia</span><span>Gastronomia</span>
+      <span>Hotelaria</span><span>Imobiliárias</span><span>Indústria</span>
+    </div>
+  </div>
+</section>
+
+<!-- ==========================================================
+     BENEFÍCIOS
+     ========================================================== -->
+<section class="secao" id="beneficios" aria-labelledby="beneficios-titulo">
+  <div class="container">
+    <div class="secao__topo revelar">
+      <span class="tag">Por que investir em um site profissional</span>
+      <h2 id="beneficios-titulo">Um site bem construído é o seu melhor vendedor em {CIDADE}</h2>
+      <p>
+        A maioria das buscas por serviços locais termina em contato no mesmo dia. Quando alguém procura por
+        {NICHO} em {CIDADE}, o resultado que aparece primeiro, carrega rápido e explica com clareza o que faz
+        recebe a ligação. É exatamente isso que a {EMPRESA} constrói: presença digital que responde à intenção
+        de busca e conduz o visitante até o contato.
+      </p>
+    </div>
+
+    <div class="grid grid--3">
+      <article class="card revelar">
+        <div class="card__icone"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg></div>
+        <h3>Visibilidade em buscas locais</h3>
+        <p>Estrutura técnica, conteúdo aprofundado e sinais locais que ajudam sua empresa a aparecer para quem já procura pelo seu serviço em {CIDADE} e {AREA_ATENDIMENTO}.</p>
+      </article>
+      <article class="card revelar">
+        <div class="card__icone"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M13 2 3 14h8l-1 8 10-12h-8z"/></svg></div>
+        <h3>Velocidade real de carregamento</h3>
+        <p>Código enxuto, imagens em WebP e zero peso desnecessário. Páginas que abrem em segundos até em conexões móveis instáveis, preservando os Core Web Vitals.</p>
+      </article>
+      <article class="card revelar">
+        <div class="card__icone"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 3v18h18"/><path d="m7 15 4-5 3 3 5-7"/></svg></div>
+        <h3>Conversão mensurável</h3>
+        <p>CTAs distribuídos, WhatsApp sempre acessível e eventos configurados no GTM e no GA4 para você saber exatamente de onde vêm os contatos.</p>
+      </article>
+      <article class="card revelar">
+        <div class="card__icone"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M8 20h8M12 18v2"/></svg></div>
+        <h3>Experiência mobile impecável</h3>
+        <p>Mais de 70% do tráfego local vem do celular. Projetamos primeiro para telas pequenas, com toques confortáveis e leitura tranquila.</p>
+      </article>
+      <article class="card revelar">
+        <div class="card__icone"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 3l8 4v5c0 5-3.4 8.4-8 9-4.6-.6-8-4-8-9V7z"/><path d="m9 12 2 2 4-4"/></svg></div>
+        <h3>Conformidade com a LGPD</h3>
+        <p>Política de Privacidade, Política de Cookies, Termos de Uso, banner de consentimento e formulários que coletam apenas o necessário.</p>
+      </article>
+      <article class="card revelar">
+        <div class="card__icone"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
+        <h3>Estrutura preparada para crescer</h3>
+        <p>Novas páginas de serviço, segmento ou cidade entram no mesmo padrão visual e técnico, sem retrabalho e sem quebrar a identidade da marca.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ==========================================================
+     SERVIÇOS
+     ========================================================== -->
+<section class="secao secao--clara" id="servicos" aria-labelledby="servicos-titulo">
+  <div class="container">
+    <div class="secao__topo revelar">
+      <span class="tag">Serviços</span>
+      <h2 id="servicos-titulo">Soluções digitais completas para {NICHO} em {CIDADE}</h2>
+      <p>Cada serviço pode ser contratado isoladamente ou combinado em uma estratégia única de aquisição de clientes, sempre com metas claras e relatórios objetivos.</p>
+    </div>
+
+    <div class="grid grid--3">
+      <article class="card revelar">
+        <div class="card__icone"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18"/></svg></div>
+        <h3>Criação de Sites</h3>
+        <p>Sites institucionais premium, com arquitetura pensada para SEO, textos originais e design exclusivo alinhado à sua marca.</p>
+        <a class="card__link" href="/criacao-de-sites-{CIDADE}/" data-evento="clique_link_interno">Conhecer o serviço →</a>
+      </article>
+      <article class="card revelar">
+        <div class="card__icone"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16v12H4z"/><path d="M8 20h8"/></svg></div>
+        <h3>Landing Pages</h3>
+        <p>Páginas focadas em uma única ação, ideais para campanhas pagas, lançamentos e captação de leads qualificados.</p>
+        <a class="card__link" href="/landing-pages-{CIDADE}/" data-evento="clique_link_interno">Conhecer o serviço →</a>
+      </article>
+      <article class="card revelar">
+        <div class="card__icone"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg></div>
+        <h3>SEO</h3>
+        <p>Otimização técnica, semântica e de conteúdo para conquistar posições sustentáveis nos resultados orgânicos.</p>
+        <a class="card__link" href="/seo-{CIDADE}/" data-evento="clique_link_interno">Conhecer o serviço →</a>
+      </article>
+      <article class="card revelar">
+        <div class="card__icone"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 21s-7-4.5-7-10a7 7 0 1 1 14 0c0 5.5-7 10-7 10z"/><circle cx="12" cy="11" r="2.5"/></svg></div>
+        <h3>SEO Local</h3>
+        <p>Perfil da Empresa no Google, padronização de dados NAP, avaliações e páginas por cidade para dominar buscas regionais.</p>
+        <a class="card__link" href="/seo-local-{CIDADE}/" data-evento="clique_link_interno">Conhecer o serviço →</a>
+      </article>
+      <article class="card revelar">
+        <div class="card__icone"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4"/></svg></div>
+        <h3>Google Ads</h3>
+        <p>Campanhas de pesquisa e performance máxima com foco em custo por lead, não em cliques vazios.</p>
+        <a class="card__link" href="/google-ads-{CIDADE}/" data-evento="clique_link_interno">Conhecer o serviço →</a>
+      </article>
+      <article class="card revelar">
+        <div class="card__icone"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 6h16M4 12h10M4 18h7"/></svg></div>
+        <h3>CRM e Automação</h3>
+        <p>Organização do funil, respostas automáticas, integrações com WhatsApp e acompanhamento de cada oportunidade.</p>
+        <a class="card__link" href="/crm-automacao-{CIDADE}/" data-evento="clique_link_interno">Conhecer o serviço →</a>
+      </article>
+    </div>
+
+    <p style="text-align:center;margin-top:var(--sp-4)">
+      <a class="btn btn--cta" href="https://wa.me/{WHATSAPP}" target="_blank" rel="noopener noreferrer"
+         data-evento="clique_whatsapp" data-local="servicos">Pedir orçamento sem compromisso</a>
+    </p>
+  </div>
+</section>
+
+<!-- ==========================================================
+     PROCESSO
+     ========================================================== -->
+<section class="secao" id="processo" aria-labelledby="processo-titulo">
+  <div class="container">
+    <div class="secao__topo revelar">
+      <span class="tag">Como trabalhamos</span>
+      <h2 id="processo-titulo">Um processo transparente do briefing à publicação</h2>
+      <p>Você acompanha cada etapa, aprova antes de avançar e recebe prazos reais. Sem surpresas, sem projeto parado.</p>
+    </div>
+    <div class="grid grid--4">
+      <div class="passo revelar"><span class="passo__num">1</span><h3>Diagnóstico</h3><p>Entendemos seu negócio, público, concorrência local e as buscas que realmente geram clientes em {CIDADE}.</p></div>
+      <div class="passo revelar"><span class="passo__num">2</span><h3>Estratégia e conteúdo</h3><p>Definimos arquitetura de páginas, palavras-chave, provas sociais e textos originais alinhados à intenção de busca.</p></div>
+      <div class="passo revelar"><span class="passo__num">3</span><h3>Design e desenvolvimento</h3><p>Interface moderna, código limpo, acessibilidade WCAG e otimização de performance desde a primeira linha.</p></div>
+      <div class="passo revelar"><span class="passo__num">4</span><h3>Publicação e evolução</h3><p>Publicação com SSL, rastreamento ativo no GA4, monitoramento de resultados e melhorias contínuas mês a mês.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ==========================================================
+     DIFERENCIAIS
+     ========================================================== -->
+<section class="secao secao--clara" id="diferenciais" aria-labelledby="diferenciais-titulo">
+  <div class="container grid grid--2" style="align-items:center">
+    <div class="revelar">
+      <span class="tag">Diferenciais</span>
+      <h2 id="diferenciais-titulo">O que separa um site bonito de um site que gera clientes</h2>
+      <p style="margin-block:var(--sp-2) var(--sp-3)">
+        Muitos sites são entregues como peças de portfólio: bonitos, pesados e invisíveis no Google.
+        Na {EMPRESA} cada decisão de layout tem uma justificativa de usabilidade, SEO, acessibilidade ou conversão.
+        Trabalhamos com um framework proprietário, validado em dezenas de projetos, que padroniza design, código,
+        conteúdo e mensuração desde o primeiro dia.
+      </p>
+      <ul class="lista-check">
+        <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span><strong>Conteúdo original e aprofundado</strong>, escrito para pessoas e revisado para buscadores, nunca copiado ou genérico.</span></li>
+        <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span><strong>Dados estruturados completos</strong> com Organization, LocalBusiness, Service, FAQPage e BreadcrumbList validados.</span></li>
+        <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span><strong>Acessibilidade levada a sério</strong>: contraste adequado, navegação por teclado, foco visível e respeito à redução de movimento.</span></li>
+        <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span><strong>Mensuração desde o lançamento</strong>: cada clique em WhatsApp, telefone, e-mail e formulário vira um evento rastreável.</span></li>
+        <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span><strong>Escalabilidade real</strong>: novas páginas de serviço, segmento ou cidade em dias, mantendo padrão e autoridade.</span></li>
+      </ul>
+      <p style="margin-top:var(--sp-3)">
+        <a class="btn btn--secundario" href="#contato" data-evento="clique_cta" data-local="diferenciais">Solicitar diagnóstico gratuito</a>
+      </p>
+    </div>
+    <div class="grid grid--2 revelar" style="gap:var(--sp-2)">
+      <div class="stat"><div class="stat__num" data-contador="180">0</div><div class="stat__label">Projetos entregues</div></div>
+      <div class="stat"><div class="stat__num" data-contador="97">0</div><div class="stat__label">% de clientes que renovam</div></div>
+      <div class="stat"><div class="stat__num" data-contador="12">0</div><div class="stat__label">Cidades atendidas</div></div>
+      <div class="stat"><div class="stat__num" data-contador="3">0</div><div class="stat__label">x mais contatos em média</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ==========================================================
+     PORTFÓLIO
+     ========================================================== -->
+<section class="secao" id="portfolio" aria-labelledby="portfolio-titulo">
+  <div class="container">
+    <div class="secao__topo revelar">
+      <span class="tag">Portfólio</span>
+      <h2 id="portfolio-titulo">Projetos recentes da {EMPRESA}</h2>
+      <p>Uma amostra de sites e campanhas desenvolvidos para negócios locais e regionais em {AREA_ATENDIMENTO}.</p>
+    </div>
+    <div class="grid grid--3">
+      <article class="portfolio__item revelar">
+        <img src="/imagens/portfolio-escritorio-advocacia-{CIDADE}.webp" alt="Página inicial do site institucional criado para um escritório de advocacia em {CIDADE}" width="600" height="375" loading="lazy" decoding="async">
+        <div class="portfolio__corpo"><h3>Escritório de Advocacia</h3><p>Site institucional com páginas por área do direito e captação por WhatsApp.</p></div>
+      </article>
+      <article class="portfolio__item revelar">
+        <img src="/imagens/portfolio-clinica-odontologica-{CIDADE}.webp" alt="Layout responsivo do site desenvolvido para uma clínica odontológica em {CIDADE}" width="600" height="375" loading="lazy" decoding="async">
+        <div class="portfolio__corpo"><h3>Clínica Odontológica</h3><p>Agendamento simplificado, SEO local e integração com o Perfil da Empresa no Google.</p></div>
+      </article>
+      <article class="portfolio__item revelar">
+        <img src="/imagens/portfolio-restaurante-{CIDADE}.webp" alt="Cardápio digital e site responsivo criados para um restaurante em {CIDADE}" width="600" height="375" loading="lazy" decoding="async">
+        <div class="portfolio__corpo"><h3>Restaurante</h3><p>Cardápio digital leve, reservas por WhatsApp e destaque em buscas por comida em {CIDADE}.</p></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ==========================================================
+     DEPOIMENTOS
+     ========================================================== -->
+<section class="secao secao--clara" id="depoimentos" aria-labelledby="depoimentos-titulo">
+  <div class="container">
+    <div class="secao__topo revelar">
+      <span class="tag">Prova social</span>
+      <h2 id="depoimentos-titulo">O que dizem os clientes da {EMPRESA}</h2>
+      <p>Depoimentos reais de empresários atendidos em {CIDADE} e região. Substitua pelos seus depoimentos verificados.</p>
+    </div>
+    <div class="grid grid--3">
+      <figure class="depoimento revelar">
+        <div class="depoimento__estrelas" aria-label="Avaliação 5 de 5">★★★★★</div>
+        <blockquote><p>O site novo mudou o jogo. Passamos a receber contatos qualificados pelo WhatsApp todos os dias e finalmente conseguimos medir de onde vem cada cliente.</p></blockquote>
+        <figcaption class="depoimento__autor"><span class="depoimento__avatar" aria-hidden="true">M</span><span><strong>Marcelo A.</strong><br>Escritório de Advocacia, {CIDADE}</span></figcaption>
+      </figure>
+      <figure class="depoimento revelar">
+        <div class="depoimento__estrelas" aria-label="Avaliação 5 de 5">★★★★★</div>
+        <blockquote><p>Profissionalismo do início ao fim. Prazo cumprido, textos muito bem escritos e um cuidado com detalhes que eu não tinha visto em outras agências.</p></blockquote>
+        <figcaption class="depoimento__autor"><span class="depoimento__avatar" aria-hidden="true">C</span><span><strong>Carla R.</strong><br>Clínica Odontológica, {CIDADE}</span></figcaption>
+      </figure>
+      <figure class="depoimento revelar">
+        <div class="depoimento__estrelas" aria-label="Avaliação 5 de 5">★★★★★</div>
+        <blockquote><p>Em três meses aparecemos na primeira página para as buscas que importam na nossa cidade. O retorno pagou o investimento com folga.</p></blockquote>
+        <figcaption class="depoimento__autor"><span class="depoimento__avatar" aria-hidden="true">J</span><span><strong>João P.</strong><br>Imobiliária, {AREA_ATENDIMENTO}</span></figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ==========================================================
+     CONTEÚDO APROFUNDADO (SEO semântico)
+     ========================================================== -->
+<section class="secao" id="sobre" aria-labelledby="sobre-titulo">
+  <div class="container" style="max-width:860px">
+    <article class="revelar">
+      <span class="tag">Sobre a {EMPRESA}</span>
+      <h2 id="sobre-titulo">{SERVICO_PRINCIPAL} em {CIDADE}: como funciona na prática</h2>
+      <p style="margin-block:var(--sp-2)">
+        A {EMPRESA} atua desde {ANO_FUNDACAO} no desenvolvimento de presença digital para negócios locais.
+        Nesse período, uma constatação se repetiu em praticamente todos os projetos: empresas sólidas,
+        com bom atendimento e reputação construída no boca a boca, perdiam oportunidades simplesmente
+        porque não apareciam quando o cliente pesquisava no celular. O trabalho começa exatamente aí,
+        na distância entre a qualidade real do serviço e a percepção que o mercado tem dele na internet.
+      </p>
+      <h3 style="margin-top:var(--sp-4)">Diagnóstico antes de qualquer linha de código</h3>
+      <p style="margin-block:var(--sp-2)">
+        Antes de propor um layout, mapeamos o cenário: quais termos as pessoas usam para procurar {NICHO}
+        em {CIDADE}, quem já ocupa as primeiras posições, que tipo de conteúdo o Google está premiando e
+        quais objeções aparecem com mais frequência no atendimento. Esse levantamento define a arquitetura
+        do site: quantas páginas de serviço, quais segmentos merecem página própria e quais cidades de
+        {AREA_ATENDIMENTO} justificam conteúdo dedicado.
+      </p>
+      <h3 style="margin-top:var(--sp-4)">Conteúdo que responde à intenção de busca</h3>
+      <p style="margin-block:var(--sp-2)">
+        Um texto raso não sustenta posição. Cada página recebe conteúdo original, com profundidade
+        compatível com a intenção de busca: explicação do serviço, para quem é indicado, como funciona o
+        processo, o que está incluído, prazos, formas de contratação e perguntas frequentes. Usamos
+        linguagem natural e entidades relacionadas ao tema, sem repetir palavra-chave de forma artificial,
+        porque buscadores modernos avaliam cobertura de assunto, não densidade.
+      </p>
+      <h3 style="margin-top:var(--sp-4)">Sinais de experiência, autoridade e confiança</h3>
+      <p style="margin-block:var(--sp-2)">
+        Informações completas da empresa, endereço em {ENDERECO}, horário de atendimento {HORARIO},
+        telefone {TELEFONE}, portfólio verificável e depoimentos identificados: esses elementos reforçam
+        credibilidade tanto para quem visita quanto para quem rastreia. Nunca inventamos números,
+        certificações ou casos de sucesso. Publicamos apenas o que a empresa pode comprovar.
+      </p>
+      <h3 style="margin-top:var(--sp-4)">Performance como requisito, não como ajuste final</h3>
+      <p style="margin-block:var(--sp-2)">
+        Trabalhamos com HTML, CSS e JavaScript puros, imagens em WebP com dimensões declaradas para evitar
+        deslocamento de layout, ícones em SVG e scripts que rodam apenas quando necessário. O resultado é
+        um Largest Contentful Paint baixo, Cumulative Layout Shift próximo de zero e páginas estáveis
+        mesmo em conexões móveis limitadas.
+      </p>
+      <h3 style="margin-top:var(--sp-4)">Mensuração e decisão baseada em dados</h3>
+      <p style="margin-block:var(--sp-2)">
+        Todo botão relevante carrega identificadores consistentes para rastreamento no Google Tag Manager,
+        alimentando GA4 e, quando houver campanhas, o Meta Pixel. Cliques em WhatsApp, telefone, e-mail,
+        envios de formulário, profundidade de rolagem e visualização das seções principais são registrados.
+        Assim, as decisões de otimização deixam de ser opinião e passam a ser leitura de comportamento.
+      </p>
+      <h3 style="margin-top:var(--sp-4)">Privacidade e conformidade com a LGPD</h3>
+      <p style="margin-block:var(--sp-2)">
+        Coletamos apenas os dados necessários para retornar o contato, informamos a finalidade no próprio
+        formulário, registramos o consentimento e disponibilizamos Política de Privacidade, Política de
+        Cookies, Termos de Uso e Termos de Serviço acessíveis no rodapé de todas as páginas. Solicitações
+        de acesso, correção ou exclusão de dados podem ser feitas pelo e-mail {EMAIL}.
+      </p>
+      <p style="margin-top:var(--sp-4)">
+        <a class="btn btn--cta" href="https://wa.me/{WHATSAPP}" target="_blank" rel="noopener noreferrer"
+           data-evento="clique_whatsapp" data-local="conteudo">Conversar sobre o meu projeto</a>
+      </p>
+    </article>
+  </div>
+</section>
+
+<!-- ==========================================================
+     FAQ
+     ========================================================== -->
+<section class="secao secao--clara" id="faq" aria-labelledby="faq-titulo">
+  <div class="container">
+    <div class="secao__topo revelar">
+      <span class="tag">Dúvidas frequentes</span>
+      <h2 id="faq-titulo">Perguntas frequentes sobre {SERVICO_PRINCIPAL} em {CIDADE}</h2>
+    </div>
+    <div class="faq">
+      <div class="faq__item">
+        <h3><button class="faq__botao" aria-expanded="false" aria-controls="faq-r1" id="faq-p1">
+          Quanto tempo leva para o site ficar pronto?
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+        </button></h3>
+        <div class="faq__resposta" id="faq-r1" role="region" aria-labelledby="faq-p1">
+          <p>Um site institucional padrão fica pronto entre 10 e 20 dias úteis, contando aprovação de layout e envio de materiais. Projetos com muitas páginas de serviço, segmento ou cidade seguem um cronograma por etapas, com entregas parciais para você acompanhar a evolução.</p>
+        </div>
+      </div>
+      <div class="faq__item">
+        <h3><button class="faq__botao" aria-expanded="false" aria-controls="faq-r2" id="faq-p2">
+          Quanto custa criar um site profissional?
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+        </button></h3>
+        <div class="faq__resposta" id="faq-r2" role="region" aria-labelledby="faq-p2">
+          <p>O investimento varia conforme o número de páginas, a profundidade do conteúdo e a necessidade de SEO contínuo. Enviamos uma proposta detalhada após o diagnóstico inicial, sempre com escopo fechado e sem cobranças surpresa. Fale no WhatsApp {WHATSAPP} para receber um orçamento.</p>
+        </div>
+      </div>
+      <div class="faq__item">
+        <h3><button class="faq__botao" aria-expanded="false" aria-controls="faq-r3" id="faq-p3">
+          Em quanto tempo o site começa a aparecer no Google?
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+        </button></h3>
+        <div class="faq__resposta" id="faq-r3" role="region" aria-labelledby="faq-p3">
+          <p>A indexação costuma ocorrer nos primeiros dias após a publicação. Posições relevantes para termos locais normalmente aparecem entre 60 e 120 dias, dependendo da concorrência em {CIDADE}. Nenhuma empresa séria garante primeira posição em prazo fixo, e desconfie de quem garante.</p>
+        </div>
+      </div>
+      <div class="faq__item">
+        <h3><button class="faq__botao" aria-expanded="false" aria-controls="faq-r4" id="faq-p4">
+          Vocês atendem empresas fora de {CIDADE}?
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+        </button></h3>
+        <div class="faq__resposta" id="faq-r4" role="region" aria-labelledby="faq-p4">
+          <p>Sim. Além de {CIDADE}, atendemos toda a região de {AREA_ATENDIMENTO} e clientes de outros estados, com reuniões remotas e acompanhamento por WhatsApp, e-mail e videochamada.</p>
+        </div>
+      </div>
+      <div class="faq__item">
+        <h3><button class="faq__botao" aria-expanded="false" aria-controls="faq-r5" id="faq-p5">
+          Eu consigo atualizar o conteúdo depois?
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+        </button></h3>
+        <div class="faq__resposta" id="faq-r5" role="region" aria-labelledby="faq-p5">
+          <p>Sim. Entregamos orientação de uso e oferecemos planos de manutenção que incluem atualizações de conteúdo, backups, monitoramento de performance e revisões periódicas de SEO.</p>
+        </div>
+      </div>
+      <div class="faq__item">
+        <h3><button class="faq__botao" aria-expanded="false" aria-controls="faq-r6" id="faq-p6">
+          O site fica em conformidade com a LGPD?
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+        </button></h3>
+        <div class="faq__resposta" id="faq-r6" role="region" aria-labelledby="faq-p6">
+          <p>Sim. Todo projeto inclui Política de Privacidade, Política de Cookies, Termos de Uso, banner de consentimento configurável, formulários com finalidade declarada, checkbox de consentimento e canal para exercício de direitos do titular.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==========================================================
+     VEJA TAMBÉM (interlinking)
+     ========================================================== -->
+<section class="secao" id="veja-tambem" aria-labelledby="veja-tambem-titulo">
+  <div class="container">
+    <div class="secao__topo revelar">
+      <span class="tag">Veja também</span>
+      <h2 id="veja-tambem-titulo">Continue explorando</h2>
+    </div>
+    <div class="grid grid--4">
+      <nav class="veja-tambem__grupo revelar" aria-label="Serviços relacionados">
+        <h3>Serviços</h3>
+        <ul>
+          <li><a href="/criacao-de-sites-{CIDADE}/">Criação de sites em {CIDADE}</a></li>
+          <li><a href="/landing-pages-{CIDADE}/">Landing pages de alta conversão</a></li>
+          <li><a href="/seo-{CIDADE}/">Consultoria de SEO</a></li>
+          <li><a href="/google-ads-{CIDADE}/">Gestão de Google Ads</a></li>
+        </ul>
+      </nav>
+      <nav class="veja-tambem__grupo revelar" aria-label="Segmentos atendidos">
+        <h3>Segmentos</h3>
+        <ul>
+          <li><a href="/site-para-advogado/">Site para advogado</a></li>
+          <li><a href="/site-para-dentista/">Site para dentista</a></li>
+          <li><a href="/site-para-restaurante/">Site para restaurante</a></li>
+          <li><a href="/site-para-imobiliaria/">Site para imobiliária</a></li>
+        </ul>
+      </nav>
+      <nav class="veja-tambem__grupo revelar" aria-label="Cidades atendidas">
+        <h3>Cidades</h3>
+        <ul>
+          <li><a href="/criacao-de-sites-foz-do-iguacu/">Foz do Iguaçu</a></li>
+          <li><a href="/criacao-de-sites-cascavel/">Cascavel</a></li>
+          <li><a href="/criacao-de-sites-toledo/">Toledo</a></li>
+          <li><a href="/criacao-de-sites-medianeira/">Medianeira</a></li>
+        </ul>
+      </nav>
+      <nav class="veja-tambem__grupo revelar" aria-label="Conteúdo e institucional">
+        <h3>Conteúdo</h3>
+        <ul>
+          <li><a href="/blog/">Blog da {EMPRESA}</a></li>
+          <li><a href="/blog/como-escolher-agencia-de-sites/">Como escolher uma agência</a></li>
+          <li><a href="/sobre/">Sobre a empresa</a></li>
+          <li><a href="/contato/">Fale conosco</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</section>
+
+<!-- ==========================================================
+     CTA FINAL
+     ========================================================== -->
+<section class="secao" aria-labelledby="cta-final-titulo" style="padding-top:0">
+  <div class="container">
+    <div class="cta-final revelar">
+      <h2 id="cta-final-titulo">Pronto para ter um site que gera clientes em {CIDADE}?</h2>
+      <p>Converse com um especialista da {EMPRESA}, receba um diagnóstico gratuito da sua presença digital e descubra o que pode ser melhorado ainda esta semana.</p>
+      <div class="cta-final__acoes">
+        <a class="btn btn--cta" href="https://wa.me/{WHATSAPP}" target="_blank" rel="noopener noreferrer"
+           data-evento="clique_whatsapp" data-local="cta_final">Chamar no WhatsApp</a>
+        <a class="btn btn--fantasma" href="tel:{TELEFONE}" data-evento="clique_telefone" data-local="cta_final">Ligar para {TELEFONE}</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==========================================================
+     CONTATO + MAPA
+     ========================================================== -->
+<section class="secao secao--clara" id="contato" aria-labelledby="contato-titulo">
+  <div class="container">
+    <div class="secao__topo revelar">
+      <span class="tag">Contato</span>
+      <h2 id="contato-titulo">Fale com a {EMPRESA}</h2>
+      <p>Responda três campos e retornamos em até um dia útil, no horário de atendimento {HORARIO}.</p>
+    </div>
+
+    <div class="grid grid--2">
+      <form class="form revelar" id="form-contato" novalidate>
+        <div class="campo">
+          <label for="nome">Nome completo *</label>
+          <input type="text" id="nome" name="nome" autocomplete="name" required aria-describedby="erro-nome">
+          <span class="campo__erro" id="erro-nome">Informe seu nome completo.</span>
+        </div>
+        <div class="campo">
+          <label for="whatsapp">WhatsApp *</label>
+          <input type="tel" id="whatsapp" name="whatsapp" inputmode="tel" autocomplete="tel" placeholder="(00) 00000-0000" required aria-describedby="erro-whatsapp">
+          <span class="campo__erro" id="erro-whatsapp">Informe um número de WhatsApp válido com DDD.</span>
+        </div>
+        <div class="campo">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" autocomplete="email" aria-describedby="erro-email">
+          <span class="campo__erro" id="erro-email">Informe um e-mail válido.</span>
+        </div>
+        <div class="campo">
+          <label for="mensagem">Como podemos ajudar?</label>
+          <textarea id="mensagem" name="mensagem" rows="4"></textarea>
+        </div>
+        <div class="consentimento">
+          <input type="checkbox" id="consentimento" name="consentimento" required>
+          <label for="consentimento" style="font-weight:400">
+            Autorizo a {EMPRESA} a utilizar meus dados exclusivamente para retornar este contato, conforme a
+            <a href="/politica-de-privacidade/">Política de Privacidade</a>. *
+          </label>
+        </div>
+        <button type="submit" class="btn btn--cta" style="width:100%" data-evento="envio_formulario" data-local="contato">Enviar mensagem</button>
+        <p class="form__status" id="form-status" role="status" aria-live="polite"></p>
+      </form>
+
+      <div class="revelar">
+        <div class="card" style="margin-bottom:var(--sp-2)">
+          <h3>Dados de contato</h3>
+          <ul class="lista-check" style="margin-top:var(--sp-2)">
+            <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 21s-7-4.5-7-10a7 7 0 1 1 14 0c0 5.5-7 10-7 10z"/></svg><span>{ENDERECO} — {CIDADE}/{ESTADO}</span></li>
+            <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.4 2 .9 3 .2 3.9L8.1 9.9a16 16 0 0 0 6 6l1.2-1.2c.9-.7 1.9-.2 3.9.2A2 2 0 0 1 22 16.9z"/></svg><span><a href="tel:{TELEFONE}" data-evento="clique_telefone" data-local="contato">{TELEFONE}</a></span></li>
+            <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><span><a href="mailto:{EMAIL}" data-evento="clique_email" data-local="contato">{EMAIL}</a></span></li>
+            <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span>{HORARIO}</span></li>
+          </ul>
+        </div>
+        <iframe class="mapa" src="{GOOGLE_MAPS}" title="Localização da {EMPRESA} em {CIDADE}" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ==========================================================
+     RODAPÉ
+     ========================================================== -->
+<footer class="rodape" aria-labelledby="rodape-titulo">
+  <div class="container">
+    <h2 id="rodape-titulo" class="pular-para-conteudo">Rodapé</h2>
+    <div class="grid grid--4">
+      <div>
+        <h3>{EMPRESA}</h3>
+        <p>{SERVICO_PRINCIPAL} e marketing digital para {NICHO} em {CIDADE}, {ESTADO} e {AREA_ATENDIMENTO}. Atuando desde {ANO_FUNDACAO}.</p>
+        <div class="redes">
+          <a href="{REDES_SOCIAIS}" target="_blank" rel="noopener noreferrer" aria-label="Instagram da {EMPRESA}" data-evento="clique_rede_social">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg>
+          </a>
+          <a href="{REDES_SOCIAIS}" target="_blank" rel="noopener noreferrer" aria-label="Facebook da {EMPRESA}" data-evento="clique_rede_social">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13 22v-8h3l.5-3H13V9c0-.9.3-1.5 1.6-1.5H17V4.9c-.3 0-1.3-.1-2.5-.1-2.5 0-4.2 1.5-4.2 4.3V11H7.5v3H10v8z"/></svg>
+          </a>
+          <a href="https://wa.me/{WHATSAPP}" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp da {EMPRESA}" data-evento="clique_whatsapp" data-local="rodape">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2zm5.8 14.2c-.2.7-1.4 1.3-2 1.4-1.6.2-3.5-.6-5.3-2.1a13 13 0 0 1-3-4c-.5-.9-.7-1.7-.7-2.4 0-1 .5-1.5.8-1.8.2-.2.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 1.9c0 .2 0 .4-.2.5l-.4.5c-.1.2-.3.3-.1.6a9 9 0 0 0 3.9 3.3c.3.1.4.1.6-.1l.8-1c.2-.2.3-.2.6-.1l1.8.9c.3.1.5.2.5.4.1.2.1.6 0 1z"/></svg>
+          </a>
+        </div>
+      </div>
+      <nav aria-label="Links rápidos">
+        <h3>Links rápidos</h3>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/servicos/">Serviços</a></li>
+          <li><a href="/segmentos/">Segmentos</a></li>
+          <li><a href="/cidades/">Cidades</a></li>
+          <li><a href="/blog/">Blog</a></li>
+          <li><a href="/contato/">Contato</a></li>
+        </ul>
+      </nav>
+      <nav aria-label="Serviços">
+        <h3>Serviços</h3>
+        <ul>
+          <li><a href="/criacao-de-sites-{CIDADE}/">Criação de sites</a></li>
+          <li><a href="/landing-pages-{CIDADE}/">Landing pages</a></li>
+          <li><a href="/seo-{CIDADE}/">SEO</a></li>
+          <li><a href="/seo-local-{CIDADE}/">SEO local</a></li>
+          <li><a href="/google-ads-{CIDADE}/">Google Ads</a></li>
+          <li><a href="/crm-automacao-{CIDADE}/">CRM e automação</a></li>
+        </ul>
+      </nav>
+      <div>
+        <h3>Contato e políticas</h3>
+        <ul>
+          <li><a href="tel:{TELEFONE}" data-evento="clique_telefone" data-local="rodape">{TELEFONE}</a></li>
+          <li><a href="mailto:{EMAIL}" data-evento="clique_email" data-local="rodape">{EMAIL}</a></li>
+          <li>{ENDERECO} — {CIDADE}/{ESTADO}</li>
+          <li><a href="/politica-de-privacidade/">Política de Privacidade</a></li>
+          <li><a href="/politica-de-cookies/">Política de Cookies</a></li>
+          <li><a href="/termos-de-uso/">Termos de Uso</a></li>
+          <li><a href="/termos-de-servico/">Termos de Serviço</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="rodape__base">
+      <span>© <span id="ano-atual">2026</span> {EMPRESA}. Todos os direitos reservados.</span>
+      <span>Desenvolvido pela {EMPRESA} — {CIDADE}/{ESTADO}</span>
+    </div>
+  </div>
+</footer>
+
+<!-- WhatsApp flutuante -->
+<a class="wpp-flutuante" href="https://wa.me/{WHATSAPP}" target="_blank" rel="noopener noreferrer"
+   aria-label="Falar com a {EMPRESA} pelo WhatsApp" data-evento="clique_whatsapp" data-local="flutuante">
+  <svg width="30" height="30" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2zm5.8 14.2c-.2.7-1.4 1.3-2 1.4-1.6.2-3.5-.6-5.3-2.1a13 13 0 0 1-3-4c-.5-.9-.7-1.7-.7-2.4 0-1 .5-1.5.8-1.8.2-.2.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 1.9c0 .2 0 .4-.2.5l-.4.5c-.1.2-.3.3-.1.6a9 9 0 0 0 3.9 3.3c.3.1.4.1.6-.1l.8-1c.2-.2.3-.2.6-.1l1.8.9c.3.1.5.2.5.4.1.2.1.6 0 1z"/></svg>
+</a>
+
+<!-- Voltar ao topo -->
+<button class="topo-btn" id="topo-btn" aria-label="Voltar ao topo da página">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m18 15-6-6-6 6"/></svg>
+</button>
+
+<!-- Banner LGPD -->
+<div class="cookies" id="banner-cookies" role="dialog" aria-live="polite" aria-label="Aviso de cookies">
+  <p style="font-size:.92rem">
+    Utilizamos cookies para melhorar sua experiência e medir o desempenho do site. Você pode aceitar,
+    rejeitar os cookies não essenciais ou consultar a <a href="/politica-de-cookies/">Política de Cookies</a>.
+  </p>
+  <div class="cookies__acoes">
+    <button class="btn btn--cta" id="cookies-aceitar">Aceitar</button>
+    <button class="btn btn--secundario" id="cookies-rejeitar">Rejeitar não essenciais</button>
+  </div>
+</div>
+
+<!-- ==========================================================
+     DADOS ESTRUTURADOS (JSON-LD)
+     ========================================================== -->
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@graph":[
+    {
+      "@type":"Organization",
+      "@id":"https://{DOMINIO}/#organization",
+      "name":"{EMPRESA}",
+      "url":"https://{DOMINIO}/",
+      "logo":"https://{DOMINIO}/{LOGO}",
+      "foundingDate":"{ANO_FUNDACAO}",
+      "email":"{EMAIL}",
+      "telephone":"{TELEFONE}",
+      "sameAs":["{REDES_SOCIAIS}"]
+    },
+    {
+      "@type":"LocalBusiness",
+      "@id":"https://{DOMINIO}/#localbusiness",
+      "name":"{EMPRESA}",
+      "image":"https://{DOMINIO}/{IMAGEM_HERO}",
+      "url":"https://{DOMINIO}/",
+      "telephone":"{TELEFONE}",
+      "email":"{EMAIL}",
+      "priceRange":"$$",
+      "address":{"@type":"PostalAddress","streetAddress":"{ENDERECO}","addressLocality":"{CIDADE}","addressRegion":"{ESTADO}","addressCountry":"BR"},
+      "areaServed":"{AREA_ATENDIMENTO}",
+      "openingHours":"{HORARIO}"
+    },
+    {
+      "@type":"Service",
+      "@id":"https://{DOMINIO}/#servico",
+      "serviceType":"{SERVICO_PRINCIPAL}",
+      "provider":{"@id":"https://{DOMINIO}/#organization"},
+      "areaServed":{"@type":"City","name":"{CIDADE}"},
+      "audience":{"@type":"Audience","audienceType":"{NICHO}"}
+    },
+    {
+      "@type":"WebSite",
+      "@id":"https://{DOMINIO}/#website",
+      "url":"https://{DOMINIO}/",
+      "name":"{EMPRESA}",
+      "inLanguage":"pt-BR",
+      "publisher":{"@id":"https://{DOMINIO}/#organization"}
+    },
+    {
+      "@type":"BreadcrumbList",
+      "itemListElement":[
+        {"@type":"ListItem","position":1,"name":"Home","item":"https://{DOMINIO}/"}
+      ]
+    },
+    {
+      "@type":"FAQPage",
+      "mainEntity":[
+        {"@type":"Question","name":"Quanto tempo leva para o site ficar pronto?","acceptedAnswer":{"@type":"Answer","text":"Um site institucional padrão fica pronto entre 10 e 20 dias úteis, contando aprovação de layout e envio de materiais. Projetos maiores seguem cronograma por etapas com entregas parciais."}},
+        {"@type":"Question","name":"Quanto custa criar um site profissional?","acceptedAnswer":{"@type":"Answer","text":"O investimento varia conforme número de páginas, profundidade do conteúdo e necessidade de SEO contínuo. A proposta é enviada após o diagnóstico inicial, com escopo fechado."}},
+        {"@type":"Question","name":"Em quanto tempo o site começa a aparecer no Google?","acceptedAnswer":{"@type":"Answer","text":"A indexação ocorre nos primeiros dias após a publicação. Posições relevantes para termos locais costumam aparecer entre 60 e 120 dias, conforme a concorrência em {CIDADE}."}},
+        {"@type":"Question","name":"Vocês atendem empresas fora de {CIDADE}?","acceptedAnswer":{"@type":"Answer","text":"Sim. Atendemos {CIDADE}, toda a região de {AREA_ATENDIMENTO} e clientes de outros estados, com reuniões remotas."}},
+        {"@type":"Question","name":"Eu consigo atualizar o conteúdo depois?","acceptedAnswer":{"@type":"Answer","text":"Sim. Entregamos orientação de uso e oferecemos planos de manutenção com atualizações, backups, monitoramento e revisões de SEO."}},
+        {"@type":"Question","name":"O site fica em conformidade com a LGPD?","acceptedAnswer":{"@type":"Answer","text":"Sim. Todo projeto inclui Política de Privacidade, Política de Cookies, Termos de Uso, banner de consentimento e formulários com finalidade declarada."}}
+      ]
+    }
+  ]
+}
+</script>
+
+<script src="script.js"></script>
+</body>
+</html>
